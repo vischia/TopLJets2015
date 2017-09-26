@@ -19,6 +19,9 @@ eosdir=/store/cmst3/group/top/ReReco2016/${githash}
 outdir=${CMSSW_BASE}/src/TopLJets2015/TopAnalysis/test/summer2017/BchargeAsymmetry
 wwwdir=~/www/BchargeAsymmetry
 
+if [ "$USER" = "vischia" ]; then
+    wwwdir=/eos/user/v/vischia/www/BchargeAsymmetry
+fi
 
 RED='\e[31m'
 NC='\e[0m'
