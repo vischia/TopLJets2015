@@ -18,9 +18,9 @@ myletter=${whoami:0:1}
 eosdir=/store/cmst3/group/top/ReReco2016/${githash}
 outdir=${CMSSW_BASE}/src/TopLJets2015/TopAnalysis/test/summer2017/BchargeAsymmetry
 wwwdir=~/www/BchargeAsymmetry
-
-if [ "$USER" = "vischia" ]; then
-    wwwdir=/eos/user/v/vischia/www/BchargeAsymmetry
+eoswwwdir=/eos/user/$myletter/$whoami/www/
+if [ -d $eoswwwdir ]; then
+    wwwdir=$eoswwwdir/BchargeAsymmetry
 fi
 
 RED='\e[31m'
